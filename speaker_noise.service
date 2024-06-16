@@ -1,0 +1,10 @@
+[Unit]
+Description=Send very low noise to speaker
+After=network.target
+
+[Service]
+ExecStart=path 0.01
+Restart=always
+group=audio
+[Install]
+WantedBy=default.target
