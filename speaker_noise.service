@@ -3,7 +3,7 @@ Description=Send very low noise to speaker
 After=network.target
 
 [Service]
-ExecStart=path 0.01
+ExecStart=path 0.0001
 Restart=always
 group=audio
 [Install]
